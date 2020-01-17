@@ -1,5 +1,3 @@
-console.log("Up and running!");
-
 let cards = [
 {
 	rank: 'queen',
@@ -25,30 +23,23 @@ let cards = [
 
 let cardsInPlay = [];
 
-console.log("User flipped queen")
-console.log("images/queen-of-hearts.png")
-console.log("hearts")
-console.log("User flipped king")
-console.log("images/king-of-hearts.png")
-console.log("hearts")
-
 let checkForMatch = function() {
 	if (cardsInPlay[0] === cardsInPlay[1]) {
-  		console.log("You found a match!");
+  		alert("You found a match!");
 	} else {
-  		console.log("Sorry, try again.");
-	}
-}
+  		alert("Sorry, try again.");
+	};
+};
 
 let flipCard = function() {
-	this.getAttribute('data-id')
-	console.log("User flipped " + cards[cardId].rank)
+	let cardId = this.getAttribute('data-id');
+	console.log("User flipped " + cards[cardId].rank);
 	cardsInPlay.push(cards[cardId].rank);
-	this.setAttribute('src', cards[cardId].cardImage)
+	this.setAttribute('src', cards[cardId].cardImage);
 	if (cardsInPlay.length === 2) {
 	checkForMatch();
 	};
-}
+};
 
 let createBoard = function() {
 	for (let i = 0; i < cards.length; i++) {
