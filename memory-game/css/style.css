@@ -94,6 +94,19 @@ img {
   margin: 40px 8px 0;
 }
 
+button {
+  font-family: "Raleway", sans-serif;
+  background-color: #F15B31;
+  color: white;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+  font-size: 20px;
+  margin: 35px auto;
+  text-transform: uppercase;
+  height: 50px;
+  width: 120px;
+}
+
 /* =============================
 FOOTER
 ================================ */
